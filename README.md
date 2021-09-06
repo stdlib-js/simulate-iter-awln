@@ -212,6 +212,21 @@ while ( true ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/simulate/iter/awgn`][@stdlib/simulate/iter/awgn]: create an iterator which introduces additive white Gaussian noise.
+-   [`@stdlib/simulate/iter/awun`][@stdlib/simulate/iter/awun]: create an iterator which introduces additive white uniform noise.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -274,6 +289,14 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
 [@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
+
+<!-- <related-links> -->
+
+[@stdlib/simulate/iter/awgn]: https://github.com/stdlib-js/simulate-iter-awgn
+
+[@stdlib/simulate/iter/awun]: https://github.com/stdlib-js/simulate-iter-awun
+
+<!-- </related-links> -->
 
 </section>
 
