@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/simulate-iter-awln",
+  "version": "0.0.0",
+  "description": "Create an iterator which introduces additive white Laplacian noise.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/simulate-iter-awln.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "simulate",
+    "simulation",
+    "noise",
+    "additive",
+    "white",
+    "laplacian",
+    "laplace",
+    "biexponential",
+    "bi-exponential",
+    "double-exponential",
+    "exponential",
+    "information theory",
+    "random",
+    "iterator",
+    "iterable",
+    "iterate",
+    "iteration",
+    "iter"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
