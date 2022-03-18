@@ -46,6 +46,7 @@
     "@stdlib/assert-is-uint32array": "^0.0.x",
     "@stdlib/constants-float64-sqrt-two": "^0.0.x",
     "@stdlib/random-base-laplace": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/symbol-iterator": "^0.0.x",
     "@stdlib/types": "^0.0.x",
     "@stdlib/utils-constant-function": "^0.0.x",
