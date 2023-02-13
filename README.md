@@ -228,8 +228,8 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/simulate/iter/awgn`][@stdlib/simulate/iter/awgn]</span><span class="delimiter">: </span><span class="description">create an iterator which introduces additive white Gaussian noise.</span>
--   <span class="package-name">[`@stdlib/simulate/iter/awun`][@stdlib/simulate/iter/awun]</span><span class="delimiter">: </span><span class="description">create an iterator which introduces additive white uniform noise.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/awgn`][@stdlib/simulate/iter/awgn]</span><span class="delimiter">: </span><span class="description">create an iterator which introduces additive white Gaussian noise.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/awun`][@stdlib/simulate/iter/awun]</span><span class="delimiter">: </span><span class="description">create an iterator which introduces additive white uniform noise.</span>
 
 </section>
 
