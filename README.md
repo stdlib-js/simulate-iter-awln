@@ -32,14 +32,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/simulate-iter-awln
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterawln from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@deno/mod.js';
+var iterawln = require( '@stdlib/simulate-iter-awln' );
 ```
 
 #### iterawln( iterator, sigma\[, options] )
@@ -47,7 +63,7 @@ import iterawln from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@d
 Returns an [iterator][mdn-iterator-protocol] which introduces additive white Laplacian (a.k.a. biexponential or double-exponential) noise (AWLN) with standard deviation `sigma`.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 var it = iterawln( arr, 0.2 );
@@ -82,8 +98,8 @@ The function accepts the following `options`:
 By default, an iterator uses the [MT19937][@stdlib/random/base/mt19937] algorithm to generate uniformly distributed pseudorandom numbers on the interval `[0,1)`. To use a different PRNG, set the `prng` option.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
+var minstd = require( '@stdlib/random-base-minstd-shuffle' );
 
 var arr = array2iterator( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 var it = iterawln( arr, 0.2, {
@@ -97,7 +113,7 @@ var v = it.next().value;
 To seed an iterator, set the `seed` option.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 var it1 = iterawln( arr, 0.2, {
@@ -121,7 +137,7 @@ var bool = ( v1 === v2 );
 To return an iterator having a specific initial state, set the iterator `state` option.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 var arr = array2iterator( [ 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 
 var it1 = iterawln( arr, 0.2 );
@@ -169,8 +185,8 @@ var bool = ( it1.next().value === it2.next().value );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterSineWave from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@deno/mod.js';
-import iterawln from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@deno/mod.js';
+var iterSineWave = require( '@stdlib/simulate-iter-sine-wave' );
+var iterawln = require( '@stdlib/simulate-iter-awln' );
 
 // Create an iterator for generating a sine wave:
 var sine = iterSineWave({
@@ -228,7 +244,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -272,7 +288,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -290,15 +306,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/deno
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/deno
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
 <!-- <related-links> -->
 
-[@stdlib/simulate/iter/awgn]: https://github.com/stdlib-js/simulate-iter-awgn/tree/deno
+[@stdlib/simulate/iter/awgn]: https://github.com/stdlib-js/simulate-iter-awgn
 
-[@stdlib/simulate/iter/awun]: https://github.com/stdlib-js/simulate-iter-awun/tree/deno
+[@stdlib/simulate/iter/awun]: https://github.com/stdlib-js/simulate-iter-awun
 
 <!-- </related-links> -->
 
