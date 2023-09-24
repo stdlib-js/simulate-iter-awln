@@ -52,6 +52,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+iterawln = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/simulate-iter-awln/tags). For example,
+
+```javascript
 iterawln = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@v0.1.0-umd/browser.js' )
 ```
 
@@ -64,7 +69,7 @@ var iterawln = require( 'path/to/vendor/umd/simulate-iter-awln/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -208,7 +213,7 @@ var bool = ( it1.next().value === it2.next().value );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
