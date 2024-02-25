@@ -50,6 +50,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterawln from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/simulate-iter-awln/tags). For example,
+
+```javascript
 import iterawln from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@v0.2.1-esm/index.mjs';
 ```
 
@@ -186,7 +191,7 @@ var bool = ( it1.next().value === it2.next().value );
 <script type="module">
 
 import iterSineWave from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@esm/index.mjs';
-import iterawln from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@v0.2.1-esm/index.mjs';
+import iterawln from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@esm/index.mjs';
 
 // Create an iterator for generating a sine wave:
 var sine = iterSineWave({
