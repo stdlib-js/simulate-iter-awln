@@ -43,43 +43,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/simulate-iter-awln
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterawln = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/simulate-iter-awln/tags). For example,
-
-```javascript
-iterawln = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@v0.2.1-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterawln = require( 'path/to/vendor/umd/simulate-iter-awln/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterawln;
-})();
-</script>
+var iterawln = require( '@stdlib/simulate-iter-awln' );
 ```
 
 #### iterawln( iterator, sigma\[, options] )
@@ -208,14 +197,9 @@ var bool = ( it1.next().value === it2.next().value );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-sine-wave@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-awln@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterSineWave = require( '@stdlib/simulate-iter-sine-wave' );
+var iterawln = require( '@stdlib/simulate-iter-awln' );
 
 // Create an iterator for generating a sine wave:
 var sine = iterSineWave({
@@ -235,11 +219,6 @@ while ( true ) {
     }
     console.log( v.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -308,8 +287,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/simulate-iter-awln.svg
 [npm-url]: https://npmjs.org/package/@stdlib/simulate-iter-awln
 
-[test-image]: https://github.com/stdlib-js/simulate-iter-awln/actions/workflows/test.yml/badge.svg?branch=v0.2.1
-[test-url]: https://github.com/stdlib-js/simulate-iter-awln/actions/workflows/test.yml?query=branch:v0.2.1
+[test-image]: https://github.com/stdlib-js/simulate-iter-awln/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/simulate-iter-awln/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/simulate-iter-awln/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/simulate-iter-awln?branch=main
@@ -343,15 +322,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/umd
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
 <!-- <related-links> -->
 
-[@stdlib/simulate/iter/awgn]: https://github.com/stdlib-js/simulate-iter-awgn/tree/umd
+[@stdlib/simulate/iter/awgn]: https://github.com/stdlib-js/simulate-iter-awgn
 
-[@stdlib/simulate/iter/awun]: https://github.com/stdlib-js/simulate-iter-awun/tree/umd
+[@stdlib/simulate/iter/awun]: https://github.com/stdlib-js/simulate-iter-awun
 
 <!-- </related-links> -->
 
