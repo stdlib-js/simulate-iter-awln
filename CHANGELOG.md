@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-04-20)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`e997446`](https://github.com/stdlib-js/stdlib/commit/e997446d98bf546c0220bad7a7f11b63c6944e35) - **bench:** refactor to use string interpolation in `simulate` [(#11591)](https://github.com/stdlib-js/stdlib/pull/11591) _(by Karan Anand)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Karan Anand
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2026-02-08)
